@@ -1,13 +1,5 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: koduki/example-cobol
-    steps:
-      - checkout
-      - run:
-          name: HelloWorld
-          command: cobc ./src/cobol/HELLO.COB
-      - run:
-          name: Print the Current Time
-          command: date
+    docker-compose run app cobc -x -o bin/HELLO ./src/cobol/HELLO.COB 
+    
