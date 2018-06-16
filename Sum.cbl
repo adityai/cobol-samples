@@ -21,3 +21,4 @@
 001400     JSON-OUTPUT SECTION.
 001500         DISPLAY "{arg1:" ARG1 ",arg2:" ARG2 ",result:" RESULT "}" .
 001700     STOP RUN.
+           END PROGRAM SUM.
